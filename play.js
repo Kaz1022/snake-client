@@ -1,21 +1,6 @@
 const net = require("net");
-
-const connect = function () {
-  const conn = net.createConnection({
-    hotst: "localhost",
-    port: 50541
-  });
-
-  conn.setEncoding("utf8");
-
-  conn.on("connect", () => {
-    console.log("you ded cuz you idled");
-  });
-
-  return conn;
-
-
-}
+// importing TCP connection module, creating a new obj
+const {connect} = require("./client");
 
 console.log("Connecting ...");
 connect();
