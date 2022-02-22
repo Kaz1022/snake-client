@@ -1,11 +1,13 @@
 // handling a TCP connection, created this file for its own module
 
 const net = require("net");
+const { IP, PORT } = require("./constants");
+
 
 const connect = function () {
   const conn = net.createConnection({
-    hotst: "localhost",
-    port: 50541
+    host: IP,
+    port: PORT
   });
 
   conn.setEncoding("utf8");
