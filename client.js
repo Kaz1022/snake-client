@@ -14,8 +14,15 @@ const connect = function () {
     console.log("Successfully connected to game server");
   });
 
+  // Sending up our Name message, it shows on the screen
   conn.on('connect', () => {
     conn.write("Name: KBN");
+  //  // Send the string "Move: up" as date to the server, via conn object
+  // Below will keep going up once it's connected
+  //   setInterval(()=>{
+  //     conn.write("Move: up");
+  //   }, 50);
+
   });
   return conn;
 
