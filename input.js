@@ -26,11 +26,11 @@ const handleUserInput = function(key) {
   }
 
   if (key === "y") {
-    connection.write("Say: Woo! Keep going!")
+    connection.write("Say: Woo! Keep going!");
   }
 
   if (key === "n") {
-    connection.write("Say: Noo! Never give up!")
+    connection.write("Say: Noo! Never give up!");
   }
 
 };
