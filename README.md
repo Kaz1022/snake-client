@@ -15,7 +15,17 @@ Before you can run this client, you will need to be running the server side whic
 ## Getting Started
 
 - Follow steps inside the snek server repo to run the server side
+- If you'd like, you can change your name in constants.js, it has to be three characters.
+
 - Run the development snake client using the `node play.js` command.
+- Like the picture above, you will see your snake on the game server with your name.
+- Use following keys to move your snake!
+- "a": move left, "d": move right, "s": move down, "w": move up
+- Collect the dot without hitting the wall! 
+- You can make a comment by pressing "y" key or "n" key. See what kind of message pops up!
+- To exit, simply press `CTRL + C`
+- Thank you for playing! 
+
 
 
 

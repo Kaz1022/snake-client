@@ -1,7 +1,7 @@
 // handling a TCP connection, created this file for its own module
 
 const net = require("net");
-const { IP, PORT } = require("./constants");
+const { IP, PORT, NAME } = require("./constants");
 
 
 const connect = function() {
@@ -18,13 +18,7 @@ const connect = function() {
 
   // Sending up our Name message, it shows on the screen
   conn.on('connect', () => {
-    conn.write("Name: KBN");
-    //  // Send the string "Move: up" as date to the server, via conn object
-    // Below will keep going up once it's connected
-    //   setInterval(()=>{
-    //     conn.write("Move: up");
-    //   }, 50);
-
+    conn.write("Name: " + NAME);
   });
   return conn;
 
